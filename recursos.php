@@ -46,12 +46,13 @@ function obtenerArreglo($sql){
     desconectar($conexion); //desconectamos la base de datos
 
     echo   $direccion;
-        sleep(2);
+        //sleep(2);
         header('Location: '.$direccion);
         die();
 
     //return $arreglo; //devolvemos el array
 }
+
 obtenerArreglo($sql);
         //$r = obtenerArreglo($sql);
         //echo json_encode($r);
